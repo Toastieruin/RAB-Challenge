@@ -7,7 +7,7 @@ public class rollers : MonoBehaviour
 
     void Update()
     {
-        Vector3 movement = new Vector3(0.0f, 1.0f, 0.0f);
+        transform.Rotate(new Vector3(25, 0, 0) * Time.deltaTime);
     }
 }
 

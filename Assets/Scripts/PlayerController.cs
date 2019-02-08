@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
         if (score >= 20)
         {
             winText.text = "You Survived!";
+            rb.MovePosition(new Vector3(0, 0, 0));
         }
     }
 
@@ -75,7 +76,7 @@ public class PlayerController : MonoBehaviour
         lifeText.text = "Life: " + life.ToString();
         if (life <= 0)
         {
-            winText.text = "You Have Died!";
+            winText.text = "Dysentery!";
             Destroy(rb);
         }
     }
